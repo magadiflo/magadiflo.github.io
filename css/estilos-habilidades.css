@@ -1,0 +1,133 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-size: 16px;
+	font-family: sans-serif, arial, helvetica,  fantasy;
+	line-height: 1.4em;/*22.4px*/
+	background: #35A49D;
+}
+/*------------------------
+ANCHURA DEL SITIO
+-------------------------*/
+.contenedor{
+	width: 990px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+/*------------------------
+ENCABEZADO
+-------------------------*/
+.encabezado{
+	background: #3D3D3D;
+	height: 70px;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+.encabezado h1{
+	float: left;
+	position: relative;
+	margin: 17px 0;
+	color: #fff;
+	text-shadow: 5px 3px 5px #35A49D;
+	font-size: 39px;
+}
+.encabezado nav{
+	float: right;
+}
+.encabezado nav ul{
+	margin: 0;
+	padding: 0;
+	height: 70px;
+}
+.encabezado nav ul li{
+	display: inline-block;
+	margin-right: -4px;
+}
+.encabezado nav ul li a{
+	display: block;
+	color: #fff;
+	padding: 20px 7px;
+	text-decoration: none;
+	height: 70px;
+}
+.encabezado nav ul li:nth-child(even){
+	border-left: 2px solid #696969;
+	border-right: 2px solid #696969;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.encabezado nav ul li:hover{
+	background: #fff;
+}
+.encabezado nav ul li a:hover{
+	color: #3d3d3d;
+	font-weight: bolder;
+	text-decoration: underline;
+}
+/*-----------------------------------
+BLOQUE-CONTENIDO
+-----------------------------------*/
+div.bloque-contenido{
+	padding-top: 100px;
+}
+.bloque-contenido .contenedor article{
+	border: 2px dotted #fff;
+	padding: 0px 20px;
+	margin: 20px;
+	color: #fff;
+}
+
+.articulos article:nth-child(1){
+	float: left;
+	width: 400px;
+	position: relative;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+.articulos article:nth-child(1) h1{
+	position: absolute;
+	top: -50px;
+	padding: 20px;
+	text-align: center;
+	background: #3D3D3D;
+	color: #FFE89C;
+}
+.articulos article:nth-child(1) li{
+	font-size: 20px;
+	padding-bottom: 10px;
+	list-style: square;
+}
+
+.articulos article:nth-child(2){
+	float: right;
+	width: 450px;
+	position: relative;
+	padding-top: 50px;
+}
+.articulos article:nth-child(2) h1{
+	position: absolute;
+	top: -50px;
+	padding: 20px;
+	text-align: center;
+	background: #3D3D3D;
+	color: #FFE89C;
+	font-size: 30px;
+}
+.articulos article:nth-child(2) li{
+	font-size: 20px;
+	padding-bottom: 10px;
+	list-style: square;
+}
+.articulos div{
+	margin: 0 auto;
+	position: relative;
+}
+.articulos div article{
+	left: 250px;
+}
+.articulos div h1{
+	font-size: 28px;
+}

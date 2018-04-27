@@ -1,0 +1,183 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-size: 16px;
+	font-family: sans-serif, arial, helvetica,  fantasy;
+	line-height: 1.4em;/*22.4px*/
+	background: #35A49D;
+}
+/*------------------------
+ANCHURA DEL SITIO
+-------------------------*/
+.contenedor{
+	width: 990px;
+	margin: 0 auto;
+}
+/*------------------------
+ENCABEZADO
+-------------------------*/
+.encabezado{
+	background: #3D3D3D;
+	height: 70px;
+	/*Se le agregará un padding-top: 70px
+	al contenedor después de este encabezado*/
+	/*Posicionando fijo el encabezado*/
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+.encabezado h1{
+	float: left;
+	position: relative;
+	margin: 17px 0;
+	color: #fff;
+	text-shadow: 5px 3px 5px #35A49D;
+	font-size: 40px;
+}
+.encabezado nav{
+	float: right;
+}
+.encabezado nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	height: 70px;
+}
+.encabezado nav ul li{
+	display: inline-block;
+	margin-right: -4px;
+}
+.encabezado nav ul li a{
+	display: block;
+	color: #fff;
+	padding: 20px 7px;
+	text-decoration: none;
+	height: 70px;
+}
+.encabezado nav ul li:nth-child(even){
+	border-left: 2px solid #696969;
+	border-right: 2px solid #696969;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.encabezado nav ul li:hover{
+	background: #fff;
+}
+.encabezado nav ul li a:hover{
+	color: #3d3d3d;
+	font-weight: bolder;
+	text-decoration: underline;
+}
+/*-----------------------------------
+BLOQUE-CONTENIDO
+-----------------------------------*/
+.principal{
+	padding-top: 100px;
+}
+.principal .contenedor form fieldset{
+	width: 300px;
+}
+.principal .contenedor form legend{
+	color: #fff;
+	font-size: 20px;
+}
+.principal .contenedor form p{
+	color: #fff;
+	font-size: 20px;
+}
+.principal .contenedor form p input{
+	color: #000;
+	font-size: 16px;
+	width: 320px;
+	height: 40px;
+}
+.principal .contenedor form p input[type="submit"]{
+	height: 50px;
+	font-size: 30px;
+	font-weight: bolder;
+	background: radial-gradient(280px at 25% 10%, #3d3d3d, #fff);
+	border-radius: 5%;
+	color: #FFE89C;
+}
+.principal .contenedor form p input:hover{
+	background: orange;
+	color: #000;
+	font-size: 16px;
+	width: 320px;
+}
+.principal .contenedor form p textarea:hover{
+	background: orange;
+	color: #000;
+}
+.principal .contenedor form p input[type="submit"]:hover{
+	background: radial-gradient(280px at 25% 10%,#FFE89C, #fff);
+	color: #3d3d3d;
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+
+/*-------------------------
+ASIDE - Complementary
+-------------------------*/
+.contenedor{
+	position: relative;
+}
+aside{
+	background: rgba(4,96,173,0.5);
+	width: 300px;
+	display: table-cell;
+	padding: 0 20px 20px;
+	position: absolute;
+	bottom: 100px;
+	left: 600px;
+
+}
+aside h2{
+	font-size: 1.625em;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+}
+aside ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+aside ul li{
+	color: #fff;
+	padding-left: 25px;
+	margin-bottom: 7px;
+}
+aside ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+aside ul li a:hover{
+	text-decoration: underline;
+}
+aside::before{
+	content: "";
+	background: #FFE89C;
+	display: block;
+	width: 100%;
+	height: 100%;
+	transform: rotate(6deg);
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: -1;
+}
+aside::after{
+	content: "";
+	background: orange;
+	display: block;
+	width: 100%;
+	height: 100%;
+	transform: rotate(-6deg);
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: -2;
+}

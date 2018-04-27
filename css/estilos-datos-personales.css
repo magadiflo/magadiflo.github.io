@@ -1,0 +1,259 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-size: 16px;
+	font-family: sans-serif, arial, helvetica,  fantasy;
+	line-height: 1.4em;/*22.4px*/
+	background: #35A49D;
+}
+/*------------------------
+ANCHURA DEL SITIO
+-------------------------*/
+.contenedor{
+	width: 990px;
+	margin: 0 auto;
+}
+/*------------------------
+ENCABEZADO
+-------------------------*/
+.encabezado{
+	background: #3D3D3D;
+	height: 70px;
+	/*Se le agregará un padding-top: 70px
+	al contenedor después de este encabezado*/
+	/*Posicionando fijo el encabezado*/
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+.encabezado h1{
+	float: left;
+	position: relative;
+	margin: 17px 0;
+	color: #fff;
+	text-shadow: 5px 3px 5px #35A49D;
+	font-size: 40px;
+}
+.encabezado nav{
+	float: right;
+}
+.encabezado nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	height: 70px;
+}
+.encabezado nav ul li{
+	display: inline-block;
+	margin-right: -4px;
+}
+.encabezado nav ul li a{
+	display: block;
+	color: #fff;
+	padding: 20px 7px;
+	text-decoration: none;
+	height: 70px;
+}
+.encabezado nav ul li:nth-child(even){
+	border-left: 2px solid #696969;
+	border-right: 2px solid #696969;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.encabezado nav ul li:hover{
+	background: #fff;
+}
+.encabezado nav ul li a:hover{
+	color: #3d3d3d;
+	font-weight: bolder;
+	text-decoration: underline;
+}
+/*-----------------------------------
+PRESENTACIÓN
+-----------------------------------*/
+.presentacion{
+	padding-top: 70px;
+}
+.presentacion .contenedor{
+
+}
+.presentacion img{
+	float: left;
+	position: relative;
+	left: 30px;
+	top: 17px;
+
+	width: 200px;
+	border-radius: 10px;
+	box-shadow: 0px 1px 0px #999,
+	0px 2px 0px 2px #888,
+	0px 3px 0px 2px #777,
+	0px 4px 0px 2px #666,
+	0px 5px 0px 2px #555,
+	0px 6px 0px 2px #444,
+	0px 7px 0px 2px #333,
+	0px 8px 7px 2px #001135,
+	0px 5px 15px 5px #3D3D3D,
+	3px 1px 10px 2px #444;
+}
+.presentacion p{
+	height: 300px;
+	padding: 50px 20px;
+	margin: 0 0 0 250px;
+	text-align: center;
+
+	font-family: "Time New Roman";
+	font-weight: bolder;
+	color: #fff;
+	font-size: 40px;
+	line-height: 1.2em;/*22.4px*/
+}
+/*----------------------------
+BLOQUE-CONTENIDO
+----------------------------*/
+.bloque-contenido .articulos{
+	position: relative;
+}
+.bloque-contenido .articulos .grupo-datos:nth-child(1){
+	position: relative;
+	width: 50%;
+	left: 0;
+	top: 0;
+}
+.bloque-contenido .articulos .grupo-datos:nth-child(2){
+	position: absolute;
+	width: 50%;
+	left: 495px;
+	top: -20px;
+}
+.bloque-contenido .articulos article{
+	position: relative;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	border-top: 1px dotted #fff;
+}
+/*PRIMER GRUPO DE DATOS
+-------------------------------------*/
+.bloque-contenido .grupo-datos:nth-child(1) article:nth-child(even) img{
+	position: absolute;
+	left: 80px;
+	top: 5px;
+}
+.bloque-contenido .grupo-datos:nth-child(1) article:nth-child(even) h2{
+	margin: 0 auto;
+	padding: 20px 20px 20px 20px;
+	text-align: center;
+	color: #FFE89C;
+}
+.bloque-contenido .grupo-datos:nth-child(1) article:nth-child(even) p{
+	text-align: center;
+	padding: 10px 20px 10px 20px;
+	margin: 0px 0px;
+	color: #fff;
+	font-weight: bold;
+}
+.bloque-contenido .grupo-datos:nth-child(1) article:nth-child(even) p span{
+	text-align: center;
+	padding: 10px 20px;
+	border-top: 3px solid #FFE89C;
+	border-bottom: 3px solid #FFE89C;
+}
+
+.bloque-contenido .grupo-datos:nth-child(1) article:nth-child(odd) img{
+	position: absolute;
+	left: 80px;
+	top: 5px;
+}
+.bloque-contenido .grupo-datos:nth-child(1) article:nth-child(odd) h2{
+	margin: 0 auto;
+	padding: 20px 20px 20px 20px;
+	text-align: center;
+	color: #FFE89C;
+}
+.bloque-contenido .grupo-datos:nth-child(1) article:nth-child(odd) p{
+	text-align: center;
+	padding: 10px 20px 10px 20px;
+	margin: 0px 0px;
+	color: #fff;
+	font-weight: bold;
+}
+.bloque-contenido .grupo-datos:nth-child(1) article:nth-child(odd) p span{
+	text-align: center;
+	padding: 10px 20px;
+	border-top: 3px solid #FFE89C;
+	border-bottom: 3px solid #FFE89C;
+}
+
+/*SEGUNDO GRUPO DE DATOS
+-------------------------------------*/
+.bloque-contenido .grupo-datos:nth-child(2) article:nth-child(even) img{
+	position: absolute;
+	left: 80px;
+	top: 5px;
+}
+.bloque-contenido .grupo-datos:nth-child(2) article:nth-child(even) h2{
+	margin: 0 auto;
+	padding: 20px 20px 20px 20px;
+	text-align: center;
+	color: #FFE89C;
+}
+.bloque-contenido .grupo-datos:nth-child(2) article:nth-child(even) p{
+	text-align: center;
+	padding: 10px 20px 10px 20px;
+	margin: 0px 0px;
+	color: #fff;
+	font-weight: bold;
+}
+.bloque-contenido .grupo-datos:nth-child(2) article:nth-child(even) p span{
+	text-align: center;
+	padding: 10px 20px;
+	border-top: 3px solid #FFE89C;
+	border-bottom: 3px solid #FFE89C;
+}
+
+.bloque-contenido .grupo-datos:nth-child(2) article:nth-child(odd) img{
+	position: absolute;
+	left: 80px;
+	top: 5px;
+}
+.bloque-contenido .grupo-datos:nth-child(2) article:nth-child(odd) h2{
+	margin: 0 auto;
+	padding: 20px 20px 20px 20px;
+	text-align: center;
+	color: #FFE89C;
+}
+.bloque-contenido .grupo-datos:nth-child(2) article:nth-child(odd) p{
+	text-align: center;
+	padding: 10px 20px 10px 20px;
+	margin: 0px 0px;
+	color: #fff;
+	font-weight: bold;
+}
+.bloque-contenido .grupo-datos:nth-child(2) article:nth-child(odd) p span{
+	text-align: center;
+	padding: 10px 20px;
+	border-top: 3px solid #FFE89C;
+	border-bottom: 3px solid #FFE89C;
+}
+/*CELULAR
+------------------*/
+.bloque-contenido .articulos > article img{
+	position: absolute;
+	left: 400px;
+}
+.bloque-contenido .articulos > article h2{
+	text-align: center;
+	color: #FFE89C;
+}
+.bloque-contenido .articulos > article p{
+	text-align: center;
+	font-size: 25px;
+	color: #fff;
+}
+.bloque-contenido .articulos > article span{
+	text-align: center;
+	padding: 10px 20px;
+	border-top: 3px solid #FFE89C;
+	border-bottom: 3px solid #FFE89C
+}

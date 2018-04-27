@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>CV-Contáctame</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/estilos-contactame.css">
+	<link rel="shortcut icon" href="image/ico-pagina.ico">
+</head>
+<body>
+	<header class="encabezado" role="banner">
+		<div class="contenedor">
+			<h1>Contáctame</h1>
+			<nav role="navigation">
+				<ul>
+					<li><a href="index.html">Portada</a></li>
+					<li><a href="datos-personales.html">Datos personales</a></li>
+					<li><a href="formacion-academica.html">Formación académica</a></li>
+					<li><a href="habilidades.html">Habilidades</a></li>
+					<li><a href="capacitaciones.html">Capacitaciones</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header> <!-- Fin del encabezado -->
+	<main class="principal" role="main">
+		<div class="contenedor">
+			<form action="#">
+				<fieldset>
+					<legend>Ingrese sus datos</legend>
+					<p>
+						<label for="txtNombre">Nombres y apellido: </label><br>
+						<input type="text" id="txtNombre" placeholder="Escribir aquí">
+					</p>
+					<p>
+						<label for="txtNombre">Correo: </label><br>
+						<input type="email" id="txtNombre" placeholder="Ejmp. miCorreo@gmail.com" required>
+					</p>
+					<p>
+						<label for="txtAsunto">Asunto:</label><br>
+						<input type="text" id="txtAsunto" placeholder="Del mensaje">
+					</p>
+					<p>
+						<label for="txtComentario">Mensaje</label><br>
+						<textarea name="txtComentario" id="txtComentario" cols="30" rows="10"></textarea>
+					</p>
+					<p>
+						<input type="submit" value="¡Enviar!">
+					</p>
+				</fieldset>
+			</form>
+		</div>
+	</main>
+	<div class="contenedor">
+		<aside role="complementary">
+			<h2>DATOS</h2>
+			<ul>
+				<li>
+					<h3>
+						<img src="images/img-celular.png" alt="Celular">
+						Celular: 
+					</h3>
+					943649626
+				</li>
+				<li>
+					<h3>
+						<img src="images/img-correo.png" alt="Correo">
+						Correo: 
+					</h3>
+					magadiflo@gmail.com
+				</li>
+				<li>
+					<h3>
+						<img src="images/img-facebook.png" alt="Facebook">
+						Facebook:
+					</h3>
+					<a href="https://www.facebook.com/martin.diazflores.18">Facebook/Martín Díaz</a>
+				</li>
+			</ul>
+		</aside>
+	</div>
+</body>
+</html>
